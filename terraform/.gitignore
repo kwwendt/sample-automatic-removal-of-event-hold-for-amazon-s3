@@ -1,0 +1,17 @@
+# Terraform state and working files
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Variable files that may contain environment-specific values
+*.tfvars
+*.tfvars.json
+!example.tfvars
+
+# Lambda build artifacts (regenerated from functions/ by the archive provider)
+build/
+
+# Plan output
+*.tfplan
